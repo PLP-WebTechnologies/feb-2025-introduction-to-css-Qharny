@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Showcase</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Development Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#image-demo">Image Styling</a></li>
+                <li><a href="#table-demo">Tables</a></li>
+                <li><a href="#registration-form">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Typography Section -->
+        <section id="typography">
+            <h2>Typography Examples</h2>
+            <p>This paragraph demonstrates the base text styling with proper line height and margin. 
+               The fonts are set to be readable and the text is justified for a clean appearance.</p>
+            
+            <h3>Heading Level 3</h3>
+            <p>Notice how different heading levels have distinct styling. Headings use a serif font 
+               while paragraph text uses a sans-serif font for contrast.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac 
+               pharetra urna. Integer nec felis a purus ultrices consequat. Suspendisse 
+               potenti. Etiam pulvinar dui vel diam sollicitudin tempor.</p>
+        </section>
+
+        <!-- Image Demo Section -->
+        <section id="image-demo">
+            <h2>Image Styling</h2>
+            <figure>
+                <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg" 
+                     alt="Computer code on screen" 
+                     width="600">
+                <figcaption>Hover over this image to see the scale effect from CSS</figcaption>
+            </figure>
+        </section>
+
+        <!-- List Demo Section -->
+        <section>
+            <h2>Ordered and Unordered Lists</h2>
+            <ol type="I">
+                <li>First level item
+                    <ul>
+                        <li>Nested unordered item</li>
+                        <li>Another nested item</li>
+                    </ul>
+                </li>
+                <li>Second level item
+                    <ul>
+                        <li>Note how margins and paddings create proper spacing</li>
+                        <li>This helps with visual hierarchy and readability</li>
+                    </ul>
+                </li>
+                <li>Third level item</li>
+            </ol>
+        </section>
+
+        <!-- Table Demo Section -->
+        <section id="table-demo">
+            <h2>Table Styling</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>Web Developer</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>UI/UX Designer</td>
+                        <td>jane@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Robert Johnson</td>
+                        <td>Project Manager</td>
+                        <td>robert@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Wilson</td>
+                        <td>Content Writer</td>
+                        <td>emily@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Notice the alternating row colors and hover effects on the table rows.</p>
+        </section>
+
+        <!-- Form Demo Section -->
+        <section id="registration-form">
+            <h2>Registration Form</h2>
+            <p>This section has a unique background color and left border applied through ID selector.</p>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferences</legend>
+                    
+                    <div class="form-group">
+                        <label for="plan">Select a Plan:</label>
+                        <select id="plan" name="plan">
+                            <option value="">--Please choose an option--</option>
+                            <option value="basic">Basic</option>
+                            <option value="premium">Premium</option>
+                            <option value="enterprise">Enterprise</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p>How did you hear about us?</p>
+                        <input type="radio" id="social" name="referral" value="social">
+                        <label for="social">Social Media</label><br>
+                        
+                        <input type="radio" id="friend" name="referral" value="friend">
+                        <label for="friend">Friend Referral</label><br>
+                        
+                        <input type="radio" id="search" name="referral" value="search">
+                        <label for="search">Search Engine</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <p>Interests (select all that apply):</p>
+                        <input type="checkbox" id="design" name="interests" value="design">
+                        <label for="design">Web Design</label><br>
+                        
+                        <input type="checkbox" id="development" name="interests" value="development">
+                        <label for="development">Web Development</label><br>
+                        
+                        <input type="checkbox" id="marketing" name="interests" value="marketing">
+                        <label for="marketing">Digital Marketing</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us more about your project..."></textarea>
+                    </div>
+                </fieldset>
+                
+                <div class="form-group">
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Media Elements Section -->
+        <section>
+            <h2>Media Elements</h2>
+            <h3>Audio Player</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <h3>Video Player</h3>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Development Fundamentals. This footer demonstrates background color, padding, and border-radius properties.</p>
+    </footer>
+</body>
+</html>
